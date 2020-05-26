@@ -50,9 +50,11 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 		 *   `];
 		 */
 		$psr4 = [
-			'App'         => APPPATH,                // To ensure filters, etc still found,
+            'Config'      => APPPATH . 'Config',
 			APP_NAMESPACE => APPPATH,                // For custom namespace
-			'Config'      => APPPATH . 'Config',
+            'App'         => APPPATH,                // To ensure filters, etc still found,
+			
+            'Thoracic'      => APPPATH . 'Thoracic',
 		];
 
 		/**
@@ -71,7 +73,9 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 		 *       'MyClass'   => '/path/to/class/file.php'
 		 *   ];
 		 */
-		$classmap = [];
+		$classmap = [
+			'GlobalIdentity'   => APPPATH . 'Libraries/GlobalIdentity.php'
+		];
 
 		//--------------------------------------------------------------------
 		// Do Not Edit Below This Line
