@@ -1,5 +1,4 @@
-<?php
-namespace App\Controllers;
+<?php namespace App\Thoracic\ConvoAPI\Controllers;
 
 /**
  * Class BaseController
